@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anti-âge</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="bg-white p-4">
+    <div class="container mx-auto flex justify-between items-center">
+
+        
+        <!-- Icône à gauche du logo (seulement en format téléphone) -->
+        <div class="flex items-center space-x-4 sm:hidden">
+            <div><img src="img/icone_navbar1.png" alt="Icone 1" class="w-5 h-5"></div>
+            <div><img src="img/rechercher.png" alt="Icone 1" class="w-5 h-5"></div>
+        </div>
+        
+        <!-- Logo -->
+        <div class="text-black text-2xl font-bold mx-auto sm:mx-0">Logo</div>
+
+        <!-- Icône à droite du logo (seulement en format téléphone) -->
+        <div class="flex items-center space-x-4 sm:hidden">
+            <div><img src="img/compte.png" alt="Icone 1" class="w-5 h-5"></div>
+            <div><img src="img/panier.png" alt="Icone 1" class="w-5 h-5"></div>
+        </div>
+
+        <!-- Liens de la navigation (seulement visible sur grand écran) -->
+        <ul class="hidden sm:flex space-x-4 items-center">
+            <li><a href="#" class="text-black text-xs hover:text-gray-400">nos produits</a></li>
+            <li><a href="#" class="text-black text-xs hover:text-gray-400">vos besoins</a></li>
+            <li><a href="#" class="text-black text-xs hover:text-gray-400">diagnostic</a></li>
+            <li><a href="#" class="text-black text-xs hover:text-gray-400">offre & fidélité</a></li>
+            <li><a href="#" class="text-black text-xs hover:text-gray-400">nos articles</a></li>
+            <li><a href="#" class="text-black text-xs hover:text-gray-400">notre histoire</a></li>
+        </ul>
+
+        <!-- Liens à droite (visible seulement sur grand écran) -->
+        <ul class="hidden sm:flex items-center space-x-4">
+            <li class="flex items-center space-x-1">
+                <img src="img/rechercher.png" alt="" class="w-5 h-5">
+                <a href="#" class="text-black text-xs hover:text-gray-400">rechercher</a>
+            </li>
+            <li class="flex items-center space-x-1">
+                <img src="img/compte.png" alt="" class="w-5 h-5">
+                <a href="#" class="text-black text-xs hover:text-gray-400">compte</a>
+            </li>
+            <li class="flex items-center space-x-1">
+                <img src="img/panier.png" alt="" class="w-5 h-5">
+                <a href="#" class="text-black text-xs hover:text-gray-400">panier</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+    <section class="flex flex-wrap">
+        <div class="relative w-full md:w-1/2">
+            <img src="img/img1.png" alt="Image 1" class="w-full">
+            <div class="absolute bottom-0 left-0 flex flex-col justify-start items-start text-left p-4 w-full md:w-3/5">
+                <h2 class="text-white text-2xl md:text-3xl lg:text-4xl font-bold mb-2">DÉCOUVREZ NOS SOINS EXPERTS ANTI-ÂGE</h2>
+                <p class="text-white text-sm md:text-base lg:text-lg mb-4">Lorem ipsum dolor sit amet lorem ipsum dolor sit amet</p>
+                <button class="border border-white text-white py-2 px-4 rounded hover:bg-white hover:text-black">DÉCOUVRIR</button>
+            </div>
+        </div>
+        <div class="relative w-full md:w-1/2">
+            <img src="img/img2.png" alt="Image 2" class="w-full">
+            <div class="absolute bottom-0 left-0 flex flex-col justify-start items-start text-left p-4 w-full md:w-3/5">
+                <h2 class="text-white text-2xl md:text-3xl lg:text-4xl font-bold mb-2">ADOPTEZ LA ROUTINE QUI VOUS CORRESPOND</h2>
+                <p class="text-white text-sm md:text-base lg:text-lg mb-4">Lorem ipsum dolor sit amet lorem ipsum dolor sit amet</p>
+                <button class="border border-white text-white py-2 px-4 rounded hover:bg-white hover:text-black">DÉMARRER</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="pt-20 pl-5 pb-20 pr-5">
+        <div class="flex flex-wrap md:flex-nowrap justify-between items-center mb-8 gap-8">
+            <h2 class="text-black text-2xl md:text-3xl lg:text-4xl font-bold mb-2">NOS SOINS EXPERTS ANTI-ÂGE</h2>
+            <p class="text-lg ml-72 font-size-16">Découvrez nos soins, crèmes visage, nettoyants, sérums et coffrets les plus populaires.</p>
+        </div>
+
+        <!-- Carrousel  -->
+        <div class="relative overflow-hidden h-96">
+            <div class="carousel-inner">
+                <!-- Première image -->
+                <div class="carousel-item">
+                    <div class="relative">
+                        <p class="absolute top-0 left-0 text-lg font-bold">Best seller</p>
+                        <img src="img/notes.png" alt="Notes" class="absolute top-0 right-0 w-20 h-6">
+                        <img src="img/IMG_DEFAULT3.png" alt="Image 1" class="w-full h-80 object-cover">
+                        <div class="flex justify-between">
+                            <p>Skin-unify</p>
+                            <p>72,00€</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- Deuxième image -->
+                <div class="carousel-item">
+                    <div class="relative">
+                        <p class="absolute top-0 left-0 text-lg font-bold">Best seller</p>
+                        <img src="img/notes.png" alt="Notes" class="absolute top-0 right-0 w-20 h-6">
+                        <img src="img/IMG_DEFAULT4.png" alt="Image 2" class="w-full h-80 object-cover">
+                        <div class="flex justify-between">
+                            <p>Oxygen glow CC cream</p>
+                            <p>72,00€</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- Troisième image -->
+                <div class="carousel-item">
+                    <div class="relative">
+                        <p class="absolute top-0 left-0 text-lg font-bold">Best seller</p>
+                        <img src="img/notes.png" alt="Notes" class="absolute top-0 right-0 w-20 h-6">
+                        <img src="img/IMG_DEFAULT5.png" alt="Image 3" class="w-full h-80 object-cover">
+                        <div class="flex justify-between">
+                            <p>global repair advanced elixir</p>
+                            <p>109,90€</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- Quatrième image -->
+                <div class="carousel-item">
+                    <div class="relative">
+                        <p class="absolute top-0 left-0 text-lg font-bold">Best seller</p>
+                        <img src="img/notes.png" alt="Notes" class="absolute top-0 right-0 w-20 h-6">
+                        <img src="img/IMG_DEFAULT6.png" alt="Image 4" class="w-full h-80 object-cover">
+                        <div class="flex justify-between">
+                            <p>global repair advanced cream</p>
+                            <p>109,90€</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- Cinquième image -->
+                <div class="carousel-item">
+                    <div class="relative">
+                        <p class="absolute top-0 left-0 text-lg font-bold">Best seller</p>
+                        <img src="img/notes.png" alt="Notes" class="absolute top-0 right-0 w-20 h-6">
+                        <img src="img/filorga_02-et-blanche.png" alt="Image 5" class="w-full h-80 object-cover">
+                        <div class="flex justify-between">
+                            <p>Hydra-hyal</p>
+                            <p>72,00€</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- Sixième image -->
+                <div class="carousel-item">
+                    <div class="relative">
+                        <p class="absolute top-0 left-0 text-lg font-bold">Best seller</p>
+                        <img src="img/notes.png" alt="Notes" class="absolute top-0 right-0 w-20 h-6">
+                        <img src="img/filorga_07-et-blanche 1.png" alt="Image 6" class="w-full h-80 object-cover">
+                        <div class="flex justify-between">
+                            <p>Lift-structure radiance</p>
+                            <p>72,00€</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control prev" onclick="prevSlide()">
+                <img src="img/icon_gauche.png" alt="Prev" class="w-8 h-8">
+            </button>
+            <button class="carousel-control next" onclick="nextSlide()">
+                <img src="img/icon_droite.png" alt="Next" class="w-8 h-8">
+            </button>
+        </section>
+        <script>
+            let currentIndex = 0;
+    
+            function showSlide(index) {
+                const slides = document.querySelectorAll('.carousel-item');
+                const totalSlides = slides.length;
+                const visibleSlides = window.innerWidth >= 640 ? 4 : 1;
+    
+                if (index >= totalSlides - visibleSlides + 1) {
+                    currentIndex = totalSlides - visibleSlides;
+                } else if (index < 0) {
+                    currentIndex = 0;
+                } else {
+                    currentIndex = index;
+                }
+    
+                const offset = -currentIndex * (100 / visibleSlides);
+                document.querySelector('.carousel-inner').style.transform = `translateX(${offset}%)`;
+            }
+    
+            function nextSlide() {
+                const slides = document.querySelectorAll('.carousel-item');
+                const totalSlides = slides.length;
+                const visibleSlides = window.innerWidth >= 640 ? 4 : 1;
+    
+                if (currentIndex < totalSlides - visibleSlides) {
+                    showSlide(currentIndex + 1);
+                }
+            }
+    
+            function prevSlide() {
+                if (currentIndex > 0) {
+                    showSlide(currentIndex - 1);
+                }
+            }
+    
+            window.addEventListener('resize', () => {
+                showSlide(currentIndex);
+            });
+    
+            document.addEventListener('DOMContentLoaded', () => {
+                showSlide(currentIndex);
+            });
+        </script>
+</body>
+</html>

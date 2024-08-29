@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'MaNouvellePolice';
+    src: url('fonts/MaNouvellePolice.woff2') format('woff2'),
+         url('fonts/MaNouvellePolice.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'MaNouvellePolice', sans-serif;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.carousel-item {
+    min-width: 25%;
+    padding: 5px;
+}
+.carousel-control {
+    position: absolute;
+    bottom: 0; 
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.carousel-control.prev {
+    left: 50%;
+    transform: translateX(-110%);
+}
+.carousel-control.next {
+    left: 50%;
+    transform: translateX(5%);
+}
+
+@media (max-width: 760px) {
+    .carousel-item {
+        min-width: 100%;
+    }
+
+    .ml-72{
+        margin-left: 0;
+    }
+    
+    
+}
+
